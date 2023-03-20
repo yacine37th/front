@@ -7,10 +7,10 @@ import SingIn from "./LOGIN/SingIn";
 import SingUp from "./LOGIN/SingUp";
 import Home from "./Pages/Home";
 
-export const AppContext = createContext(null); 
-
+export const AppContext = createContext(null);
   
 function App() {
+  
   const[cookies,setCookies] = useCookies(['access_token'])
 
   return (

@@ -23,11 +23,11 @@ function Home() {
   // });
   // console.log(filesContent)
   const navigate = useNavigate();
-  // const logout = ()=>{
-  //   setCookies("access_token" , "");
-  //   window.localStorage.removeItem("userID");
-  //   navigate('/login')
-  // }
+  const logout = ()=>{
+    setCookies("access_token" , "");
+    window.localStorage.removeItem("userID");
+    navigate('/login')
+  }
   return (
 
 <div className='p-5 grid grid-cols-2 gap-y-7 md:grid-cols-4'>
@@ -47,7 +47,7 @@ function Home() {
          (<img src={file.content} alt="" />))}</div>
          <div>{!!filesContent &&<img src={filesContent[0]?.content} alt="" />}</div> */}
          <h1></h1>
-         {/* <button onClick={logout}>logout</button> */}
+         <button   className='border-2 border-black mt-5' onClick={logout}>logout</button>
     </div>
   )
 }
