@@ -61,6 +61,8 @@ function SingIn() {
           console.log(email)
          }}
         >Connect</button>
+
+        
     </form>
    <div className='flex justify-between'>
    <Link to="/forgetpassword" className='text-gray-600'>
